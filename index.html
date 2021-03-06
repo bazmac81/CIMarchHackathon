@@ -1,167 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Share the love on St. Patrick's Day, Send family & friends a personalised Paddy Mail">
-        <meta name="keywords" content="St. Patrick's Day, Irish, Ireland, Greetings Card, Family, Friends">
-        <meta name="author" content="Hack Me, I'm Irish">
-        <title>You've Got Paddy Mail</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>   
-    </head>
-    <body>
-        <header>
-            <!--Navbar to go here -->
-        </header>
-        <article>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Share the love on St. Patrick's Day, Send family & friends a personalised Paddy Mail">
+    <meta name="keywords" content="St. Patrick's Day, Irish, Ireland, Greetings Card, Family, Friends">
+    <meta name="author" content="Hack Me, I'm Irish">
+    <title>You've Got Paddy Mail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <!--Navbar to go here -->
+    </header>
+    <article>
+        <section>
+            <div class="hero-image">
+                <!--Hero Image specified in style.css-->
+                <h1 class="title-text">You've Got Paddy Mail</h1>
+            </div>
+        </section>
+        <section class="intro">
+            <!--Intro Paragraph (Navbar - Home)-->
+            <h2>Welcome to You've Got Paddy Mail!</h2>
+            <p>
+                Regardless of where you are from, on St. Patrick's Day everyone is Irish!
+            </p>
+            <p>
+                It has never been more important to stay connected to family, friends & loved ones and here at You've
+                Got Paddy Mail we have the perfect Fun & Easy way for
+                you to let your nearest & dearest know that you are thinking of them. Create a Free Greetings Card in
+                three quick and easy steps!
+            </p>
+            <ol>
+                <li>Choose a Design</li>
+                <li>Customise it</li>
+                <li>Add your personal message</li>
+            </ol>
+            <p>And Hey Presto, your Fab St. Patrick's Day Greeting Card is ready to send!</p>
+        </section>
+        <form>
             <section>
-                <div class="hero-image">
-                    <!--Hero Image specified in style.css-->
-                    <h1 class="title-text">You've Got Paddy Mail</h1>
-                </div>
-            </section>
-            <section class="intro">
-                <!--Intro Paragraph (Navbar - Home)-->
-                <h2>Welcome to You've Got Paddy Mail!</h2>
-                <p>
-                    Regardless of where you are from, on St. Patrick's Day everyone is Irish!  
-                </p>
-                <p>
-                    It has never been more important to stay connected to family, friends & loved ones and here at You've Got Paddy Mail we have the perfect Fun & Easy way for
-                    you to let your nearest & dearest know that you are thinking of them.  Create a Free Greetings Card in three quick and easy steps!
-                </p>
-                <ol>
-                    <li>Choose a Design</li>
-                    <li>Customise it</li>
-                    <li>Add your personal message</li>
-                </ol>
-                <p>And Hey Presto, your Fab St. Patrick's Day Greeting Card is ready to send!</p>
-            </section>
-            <form>
-                <section>
-                    <!--Greetings Card Designs (Navbar - Choose Your Design)-->
-                    <div class="container design-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Step 1: Choose a Design</h2>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <img src="./assets/images/design-one.png" height="261px" width="389px" alt="Greetings Card Design One - bearded man celebrating St. Patricks Day">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <img src="./assets/images/design-two.png" height="261px" width="389px" alt="Greetings Card Design Two - A Dog wearing a St. Patricks Day hat">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <img src="./assets/images/design-three.png" height="261px" width="389px" alt="Greetings Card Design Three - An image saying Happy St. Patricks Day">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <img src="./assets/images/design-four.png" height="261px" width="389px" alt="Greetings Card Design Four - A pint of Guinness on a bar with a blurred background">
-                            </div>
-                            <div class="col-12"> <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="designRadio1">Design 1</label>
-                                    <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio1" value="design1">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="designRadio2">Design 2</label>
-                                    <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio2" value="design2">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="designRadio3">Design 3</label>
-                                    <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio3" value="design3">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="designRadio4">Design 4</label>
-                                    <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4" value="design4">
-                                </div>
-                            </div> <!-- End of Bootstrap Code -->
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <!--Choose a Frame (Navbar - Choose a Frame)-->
-                    <div class="container frame-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Step 2: Choose a Frame</h2>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/images/frame-one.png" height="261px" width="389px" alt="Frame One - A frame of Shamrocks with a leprechaun in the bottom left corner">
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/images/frame-two.png" height="261px" width="389px" alt="Frame Two - A simple green box-frame">
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/images/frame-three.png" height="261px" width="389px" alt="Frame Three - A frame of Shamrocks and Balloons with a Rainbow in the bottom right corner">
-                            </div>
-                            <div class="col-12"> <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="frameRadio1">Frame 1</label>
-                                    <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio1" value="frame1">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="frameRadio2">Frame 2</label>
-                                    <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio2" value="frame2">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="frameRadio3">Frame 3</label>
-                                    <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio3" value="frame3">
-                                </div>
-                            </div> <!-- End of Bootstrap Code -->
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <!--Customise with Clip Art ???? (Navbar - Customise)-->
-                </section>
-                <section>
-                    <!--Enter your personal message (Navbar - Your Message)-->
-                    <div class="container message-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Step 3: Add Your Personal Message</h2>
-                            </div>
-                            <div class="col-12 col-lg-10 offset-lg-1">  <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
-                                <div class="form-group"> 
-                                    <label for="messageTextarea1">Enter Your Personal Message Here!</label>
-                                    <textarea class="form-control" id="messageTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="form-group"> 
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </div> <!-- End of Bootstrap Code --> 
-                        </div>
-                    </div>
-                </section>
-            </form>
-            <section>
-                <!--Email Form to send greetings card (Navbar - Send)-->
-                <div class="container form-container">
+                <!--Greetings Card Designs (Navbar - Choose Your Design)-->
+                <div class="container design-container">
                     <div class="row">
-                        <div class="col-12 col-lg-10 offset-lg-1">
-                            <!-- Insert Form Here -->
-                            <h2>Space for Email Form to slot in</h2>
+                        <div class="col-12">
+                            <h2>Step 1: Choose a Design</h2>
                         </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-one.png" height="261px" width="389px"
+                                alt="Greetings Card Design One - bearded man celebrating St. Patricks Day">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-two.png" height="261px" width="389px"
+                                alt="Greetings Card Design Two - A Dog wearing a St. Patricks Day hat">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-three.png" height="261px" width="389px"
+                                alt="Greetings Card Design Three - An image saying Happy St. Patricks Day">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-four.png" height="261px" width="389px"
+                                alt="Greetings Card Design Four - A pint of Guinness on a bar with a blurred background">
+                        </div>
+                        <div class="col-12">
+                            <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio1">Design 1</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio1"
+                                    value="design1">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio2">Design 2</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio2"
+                                    value="design2">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio3">Design 3</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio3"
+                                    value="design3">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio4">Design 4</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4"
+                                    value="design4">
+                            </div>
+                        </div> <!-- End of Bootstrap Code -->
                     </div>
                 </div>
             </section>
             <section>
-                <!--Send another greetings card-->
-                <div class="container send-another-container">
+                <!--Choose a Frame (Navbar - Choose a Frame)-->
+                <div class="container frame-container">
                     <div class="row">
-                        <div class="col-12 col-lg-10 offset-lg-1">
-                            <!-- Insert Form Here -->
-                            <h2>Space for Send Another Card - Need to clarify requirments of this section ref Stephen</h2>
+                        <div class="col-12">
+                            <h2>Step 2: Choose a Frame</h2>
                         </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-one.png" height="261px" width="389px"
+                                alt="Frame One - A frame of Shamrocks with a leprechaun in the bottom left corner">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-two.png" height="261px" width="389px"
+                                alt="Frame Two - A simple green box-frame">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-three.png" height="261px" width="389px"
+                                alt="Frame Three - A frame of Shamrocks and Balloons with a Rainbow in the bottom right corner">
+                        </div>
+                        <div class="col-12">
+                            <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="frameRadio1">Frame 1</label>
+                                <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio1"
+                                    value="frame1">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="frameRadio2">Frame 2</label>
+                                <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio2"
+                                    value="frame2">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="frameRadio3">Frame 3</label>
+                                <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio3"
+                                    value="frame3">
+                            </div>
+                        </div> <!-- End of Bootstrap Code -->
                     </div>
                 </div>
             </section>
-        </article>
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+            <section>
+                <!--Customise with Clip Art ???? (Navbar - Customise)-->
+            </section>
+            <section>
+                <!--Enter your personal message (Navbar - Your Message)-->
+                <div class="container message-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Step 3: Add Your Personal Message</h2>
+                        </div>
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
+                            <div class="form-group">
+                                <label for="messageTextarea1">Enter Your Personal Message Here!</label>
+                                <textarea class="form-control" id="messageTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div> <!-- End of Bootstrap Code -->
+                    </div>
+                </div>
+            </section>
+        </form>
+        <section>
+            <!--Email Form to send greetings card (Navbar - Send)-->
+            <!-- <div class="container form-container"> -->
+                <!-- <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1"> -->
+                        <!-- Send the card Form Here -->
+                        <!-- form code was taken from here: https://bbbootstrap.com/snippets/simple-contact-form-74408136 -->
+                        <div class="container">
+                            <div class=" text-center mt-5 ">
+                                <h1>Let's send your card now!</h1>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-7 mx-auto">
+                                    <div class="card mt-2 mx-auto p-4 bg-light">
+                                        <div class="card-body bg-light">
+                                            <div class="container">
+                                                <form id="contact-form" role="form">
+                                                    <div class="controls">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label
+                                                                        for="form_name">Your Name *</label> <input
+                                                                        id="form_name" type="text" name="name"
+                                                                        class="form-control"
+                                                                        placeholder="Please enter your name *"
+                                                                        required="required"
+                                                                        data-error="Your name is required."> </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label
+                                                                        for="form_recipient">Recipient's Name *</label> <input
+                                                                        id="form_recipient" type="text" name="recipient"
+                                                                        class="form-control"
+                                                                        placeholder="Please enter recipient's name *"
+                                                                        required="required"
+                                                                        data-error="Recipient's name is required."> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label for="sender_email">Your email
+                                                                        *</label> <input id="sender_email" type="email"
+                                                                        name="email" class="form-control"
+                                                                        placeholder="Please enter your email *"
+                                                                        required="required"
+                                                                        data-error="Valid email is required."> </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label for="rec_email">Recipient's email
+                                                                        *</label> <input id="rec_email" type="email"
+                                                                        name="email" class="form-control"
+                                                                        placeholder="Please enter recipient's email *"
+                                                                        required="required"
+                                                                        data-error="Valid email is required."> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group"> <label
+                                                                        for="form_message">Message (optional)</label> <textarea
+                                                                        id="form_message" name="message"
+                                                                        class="form-control"
+                                                                        placeholder="Write your greeting message here." rows="4"
+                                                                        data-error="Please, leave us a message."></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12"> <input type="submit"
+                                                                    class="btn btn-success btn-send pt-2 btn-block "
+                                                                    value="Send Message"> </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /.8 -->
+                                </div> <!-- /.row-->
+                            </div>
+                        </div>
+                    <!-- </div>
+                </div>
+            </div> -->
+        </section>
+        <section>
+            <!--Send another greetings card-->
+            <div class="container send-another-container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <!-- Insert Form Here -->
+                        <h2>Space for Send Another Card - Need to clarify requirments of this section ref Stephen</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
