@@ -33,22 +33,33 @@ body{
 
 .design-container{
     margin: 3em auto;
+    text-align: center;
 }
 
 .frame-container{
     margin: 3em auto;
+    text-align: center;
 }
-
-
 
 .message-container{
     margin: 3em auto;
+    text-align: center;
+}
+
+.message-container .form-group{
+    justify-content: center;
 }
 
 .form-container{
+    width: 90%;
+    height: 300px;
     margin: 3em auto;
+    background-color: aqua;  /* Background color only added to highlight space available*/
 }
 
 .send-another-container{
+    width: 90%;
+    height: 300px;
     margin: 3em auto;
+    background-color: palevioletred; /* Background color only added to highlight space available*/
 }
