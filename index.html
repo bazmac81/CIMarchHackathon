@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+
 </head>
 
 <body>
@@ -160,86 +163,74 @@
             </section>
         </form>
         <section>
-            <!--Email Form to send greetings card (Navbar - Send)-->
-            <!-- <div class="container form-container"> -->
-                <!-- <div class="row">
-                    <div class="col-12 col-lg-10 offset-lg-1"> -->
-                        <!-- Send the card Form Here -->
-                        <!-- form code was taken from here: https://bbbootstrap.com/snippets/simple-contact-form-74408136 -->
-                        <div class="container">
-                            <div class=" text-center mt-5 ">
-                                <h1>Let's send your card now!</h1>
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-7 mx-auto">
-                                    <div class="card mt-2 mx-auto p-4 bg-light">
-                                        <div class="card-body bg-light">
-                                            <div class="container">
-                                                <form id="contact-form" role="form">
-                                                    <div class="controls">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label
-                                                                        for="form_name">Your Name *</label> <input
-                                                                        id="form_name" type="text" name="name"
-                                                                        class="form-control"
-                                                                        placeholder="Please enter your name *"
-                                                                        required="required"
-                                                                        data-error="Your name is required."> </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label
-                                                                        for="form_recipient">Recipient's Name *</label> <input
-                                                                        id="form_recipient" type="text" name="recipient"
-                                                                        class="form-control"
-                                                                        placeholder="Please enter recipient's name *"
-                                                                        required="required"
-                                                                        data-error="Recipient's name is required."> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="sender_email">Your email
-                                                                        *</label> <input id="sender_email" type="email"
-                                                                        name="email" class="form-control"
-                                                                        placeholder="Please enter your email *"
-                                                                        required="required"
-                                                                        data-error="Valid email is required."> </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label for="rec_email">Recipient's email
-                                                                        *</label> <input id="rec_email" type="email"
-                                                                        name="email" class="form-control"
-                                                                        placeholder="Please enter recipient's email *"
-                                                                        required="required"
-                                                                        data-error="Valid email is required."> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group"> <label
-                                                                        for="form_message">Message (optional)</label> <textarea
-                                                                        id="form_message" name="message"
-                                                                        class="form-control"
-                                                                        placeholder="Write your greeting message here." rows="4"
-                                                                        data-error="Please, leave us a message."></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12"> <input type="submit"
-                                                                    class="btn btn-success btn-send pt-2 btn-block "
-                                                                    value="Send Message"> </div>
-                                                        </div>
+            <!-- Send the card Form Here -->
+            <!-- form code was taken from here: https://bbbootstrap.com/snippets/simple-contact-form-74408136 -->
+            <div class="container">
+                <div class=" text-center mt-5 ">
+                    <h1>Let's send your card now!</h1>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-light">
+                            <div class="card-body bg-light">
+                                <div class="container">
+                                    <form id="contact-form" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_name">Your Name *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            class="form-control" placeholder="Please enter your name *"
+                                                            required="required" data-error="Your name is required.">
                                                     </div>
-                                                </form>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_recipient">Recipient's
+                                                            Name *</label> <input id="form_recipient" type="text"
+                                                            name="recipient" class="form-control"
+                                                            placeholder="Please enter recipient's name *"
+                                                            required="required"
+                                                            data-error="Recipient's name is required."> </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="sender_email">Your email
+                                                            *</label> <input id="sender_email" type="email" name="email"
+                                                            class="form-control" placeholder="Please enter your email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="rec_email">Recipient's email
+                                                            *</label> <input id="rec_email" type="email" name="email"
+                                                            class="form-control"
+                                                            placeholder="Please enter recipient's email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"> <label for="form_message">Message
+                                                            (optional)</label> <textarea id="form_message"
+                                                            name="message" class="form-control"
+                                                            placeholder="Write your greeting message here." rows="4"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12"> <input type="submit"
+                                                        class="btn btn-success btn-send pt-2 btn-block "
+                                                        value="Send Message" onclick="sendEmail()"> </div>
                                             </div>
                                         </div>
-                                    </div> <!-- /.8 -->
-                                </div> <!-- /.row-->
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                    <!-- </div>
+                        </div> <!-- /.8 -->
+                    </div> <!-- /.row-->
                 </div>
-            </div> -->
+            </div>
         </section>
         <section>
             <!--Send another greetings card-->
