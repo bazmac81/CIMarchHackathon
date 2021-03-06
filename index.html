@@ -11,6 +11,19 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>   
         <link rel="shortcut icon" href="assets/images/favicon-solid.png" />
+        <script src="assets/js/photo.js"></script> <!--https://www.youtube.com/watch?v=eN0c-xQmTo4-->
+        <script>
+            var a = document.getElementById("blah");
+            function readUrl(input){
+                if(input.file){
+                    var reader = new FileReader();
+                    reader.readAsDataURL(input.files[0]);
+                    reader.onload=(e)=>{
+                        a.src = e.target.result
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -72,7 +85,12 @@
                                 <img src="./assets/images/design-four.png" class="img-fluid img-guinness" height="261px" width="389px" alt="Greetings Card Design Four - A pint of Guinness on a bar with a blurred background">
                                 <label class="form-check-label" for="designRadio4">Design 4</label>
                                 <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4" value="design4">
-                            </div>                
+                            </div>        
+                            <!--https://www.youtube.com/watch?v=eN0c-xQmTo4-->
+                            <div class="upload col-12 col-md-6 form-check">
+                                <img src="https://raw.githubusercontent.com/ceciliabinck/taste-world-snacks/master/media/images/noimage.png" id="blah" alt="Img"><br><br>
+                                <input type="file" onchange="readUrl(this)">
+                            </div>        <!--end code https://www.youtube.com/watch?v=eN0c-xQmTo4-->
                       </div>
                     </div>
                 </section> 
