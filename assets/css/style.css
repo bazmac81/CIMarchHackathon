@@ -26,21 +26,19 @@ body{
 
 .main-header {
     width: 100%;
-    height: 200px;
+    height: 50vh;
 }
 
 .hero-image{
-    background: url('../images/hero-image.png') no-repeat center center; 
+    background: url('../images/hero-image.png') no-repeat center center;
+    background-size: cover; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: 800px;
     width: 100%;
+    height: auto;
     overflow: hidden;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
+    
 }
 
 .title-text{
@@ -234,6 +232,11 @@ em {
     .form-group label {
         font-size: 18px;
     }
+
+   .main-header {
+        height: 32vh;
+    }
+
 
 
 }
