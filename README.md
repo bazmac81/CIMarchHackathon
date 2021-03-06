@@ -16,3 +16,19 @@ Colour palette:
 - ![#9fda40](https://placehold.it/20/9fda40/9fda40) `#9fda40`  
 - ![#d9df1d](https://placehold.it/20/d9df1d/d9df1d) `#d9df1d`
 
+
+
+
+ 
+## Credits:
+
+Designs:
+design-one https://www.pexels.com/photo/bearded-man-celebrating-saint-patricks-day-3851631/  
+design-two https://unsplash.com/photos/P2fRnPdh_pA  
+design-three https://pixabay.com/illustrations/irish-st-patrick-s-day-ireland-luck-845398/  
+design-four https://unsplash.com/photos/w578cN0JxIw  
+
+Frames:  
+frame-one https://pixabay.com/illustrations/rainbow-gold-leprechaun-st-patrick-163535/  
+frame-two https://pixabay.com/illustrations/frame-border-green-st-patricks-day-2088868/  
+frame-three https://pixabay.com/illustrations/clover-frame-rainbow-st-patrick-day-4892407/  
