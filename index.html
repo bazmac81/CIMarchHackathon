@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Share the love on St. Patrick's Day, Send family & friends a personalised Paddy Mail">
-        <meta name="keywords" content="St. Patrick's Day, Irish, Ireland, Greetings Card, ">
+        <meta name="keywords" content="St. Patrick's Day, Irish, Ireland, Greetings Card, Family, Friends">
         <meta name="author" content="Hack Me, I'm Irish">
         <title>You've Got Paddy Mail</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -17,28 +17,113 @@
         </header>
         <article>
             <section>
-                <!--Hero Image (Navbar - Home)-->
+                <div class="hero-image">
+                    <!--Hero Image specified in style.css-->
+                    <h1 class="title-text">You've Got Paddy Mail</h1>
+                </div>
             </section>
-            <section>
+            <section class="intro">
                 <!--Intro Paragraph (Navbar - Home)-->
+                <h2>Welcome to You've Got Paddy Mail!</h2>
+                <p>
+                    Regardless of where you are from, on St. Patrick's Day everyone is Irish!  
+                </p>
+                <p>
+                    It has never been more important to stay connected to family, friends & loved ones and here at You've Got Paddy Mail we have the perfect Fun & Easy way for
+                    you to let your nearest & dearest know that you are thinking of them.  Create a Free Greetings Card in three quick and easy steps!
+                </p>
+                <ol>
+                    <li>Choose a Design</li>
+                    <li>Customise it</li>
+                    <li>Add your personal message</li>
+                </ol>
+                <p>And Hey Presto, your Fab St. Patrick's Day Greeting Card is ready to send!</p>
             </section>
             <section>
                 <!--Greetings Card Designs (Navbar - Choose Your Design)-->
+                <div class="container design-container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-one.png" height="261px" width="389px" alt="Greetings Card Design One - bearded man celebrating St. Patricks Day">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-two.png" height="261px" width="389px" alt="Greetings Card Design Two - A Dog wearing a St. Patricks Day hat">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-three.png" height="261px" width="389px" alt="Greetings Card Design Three - An image saying Happy St. Patricks Day">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/design-four.png" height="261px" width="389px" alt="Greetings Card Design Four - A pint of Guinness on a bar with a blurred background">
+                        </div>
+                        <div class="col-12"> <!-- Code Modified from Bootstrap Forms: https://getbootstrap.com/docs/4.5/components/forms/ -->
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio1">Design 1</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio1" value="design1">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio2">Design 2</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio2" value="design2">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio3">Design 3</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio3" value="design3">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="designRadio4">Design 4)</label>
+                                <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4" value="design4">
+                            </div>
+                        </div> <!-- End of Bootstrap Code -->
+                    </div>
+                </div>
             </section>
             <section>
                 <!--Choose a Frame (Navbar - Choose a Frame)-->
+                <div class="container frame-container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-one.png" height="261px" width="389px" alt="Frame One - A frame of Shamrocks with a leprechaun in the bottom left corner">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-two.png" height="261px" width="389px" alt="Frame Two - A simple green box-frame">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./assets/images/frame-three.png" height="261px" width="389px" alt="Frame Three - A frame of Shamrocks and Balloons with a Rainbow in the bottom right corner">
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <!--Customise with Clip Art (Navbar - Customise)-->
             </section>
             <section>
                 <!--Enter your personal message (Navbar - Your Message)-->
+                <div class="container message-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-2">
+                            <!-- Insert Form Here -->
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <!--Email Form to send greetings card (Navbar - Send)-->
+                <div class="container form-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-2">
+                            <!-- Insert Form Here -->
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <!--Send another greetings card-->
+                <div class="container send-another-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-2">
+                            <!-- Insert Form Here -->
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
         

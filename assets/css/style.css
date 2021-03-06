@@ -9,7 +9,46 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 19px;
-    background-color: #60a830;
-  
-   
+    background-color: #ffffff;
+}
+
+.hero-image{
+    height: 75vh;
+    overflow: hidden;
+    background: url('../images/hero-image.png') center center / cover no-repeat fixed; 
+    -webkit-background-size: center center / cover no-repeat fixed;
+    -moz-background-size: center center / cover no-repeat fixed;
+    -o-background-size: center center / cover no-repeat fixed;
+}
+
+.title-text{
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.intro{
+    text-align: center;
+}
+
+.design-container{
+    margin: 3em auto;
+}
+
+.frame-container{
+    margin: 3em auto;
+}
+
+
+
+.message-container{
+    margin: 3em auto;
+}
+
+.form-container{
+    margin: 3em auto;
+}
+
+.send-another-container{
+    margin: 3em auto;
 }

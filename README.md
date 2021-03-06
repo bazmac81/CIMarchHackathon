@@ -22,6 +22,9 @@ Colour palette:
  
 ## Credits:
 
+Hero Image:
+hero-image https://email.uplers.com/blog/fuel-saint-patricks-day-sales-with-10-amazing-email-inspirations/  
+
 Designs:
 design-one https://www.pexels.com/photo/bearded-man-celebrating-saint-patricks-day-3851631/  
 design-two https://unsplash.com/photos/P2fRnPdh_pA  
