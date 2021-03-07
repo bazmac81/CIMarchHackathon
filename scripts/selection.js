@@ -12,16 +12,18 @@ var confirmCard = document.getElementById('final-preview')
 function chooseSelection(e){
     e.preventDefault();
     var formID = e.target.getAttribute('id');
-    var images = e.target.getElementsByTagName('input');
+    var images;
 
     //Check which section has been activated to capture the relevant option and save to the array
     // index 0 = image, 1 = frame, 2 = message 
     switch (formID) {
         case "image-select":
             position = 0;
+            images = document.getElementsByName('designRadioOptions')
             break;
         case "frame-select":
             position = 1;
+            images = document.getElementsByName('frameRadioOptions')
             break;
         case "card-msg":
             position = 2;
@@ -31,7 +33,7 @@ function chooseSelection(e){
     //Assign the image / frame option chosen
     if(position < 2){
         for (let i = 0; i < images.length; i++){
-            if (images[i].hasAttribute('checked')){
+            if (images[i].checked){
                 choices[position] = images[i].previousElementSibling.previousElementSibling.getAttribute('src');
             }
         }
