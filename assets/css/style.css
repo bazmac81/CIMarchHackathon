@@ -204,7 +204,9 @@ em {
     text-align: center;
 }
 
-#back-to-images {
+#back-to-images,
+.go-back,
+.submit {
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -244,21 +246,6 @@ em {
     position: flex;
 }
 
-.submit {
-    padding: 5px;
-    margin: 10px;
-    width: 250px;
-    background-color: #d9df1d;
-    color: #224d17;
-    border-radius: 5px;
-    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
-    font-size: 22px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
-
-.submit:hover,
 .btn:hover {
     background-color: #224d17;
     color: #d9df1d;
