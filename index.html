@@ -11,19 +11,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>   
         <link rel="shortcut icon" href="assets/images/favicon-solid.png" />
-        <script src="assets/js/photo.js"></script> <!--https://www.youtube.com/watch?v=eN0c-xQmTo4-->
-        <script>
-            var a = document.getElementById("blah");
-            function readUrl(input){
-                if(input.file){
-                    var reader = new FileReader();
-                    reader.readAsDataURL(input.files[0]);
-                    reader.onload=(e)=>{
-                        a.src = e.target.result
-                    }
-                }
-            }
-        </script>
+        <script src="./assets/js/photo.js"></script> <!--https://www.youtube.com/watch?v=eN0c-xQmTo4-->
+
     </head>
     <body>
         <header>
@@ -36,7 +25,7 @@
                     <h1 class="title-text">You've Got Paddy Mail</h1>
                 </div>
             </section>
-           <section class="intro">
+           <section class="intro" id="intro">
                <div class="row">
                    <div class="col-12">
                 <!--Intro Paragraph (Navbar - Home) -->
@@ -59,7 +48,7 @@
                </div> 
             </section>
            <form>
-                <section>
+                <section id="step-1">
                     <!-- Greetings Card Designs (Navbar - Choose Your Design) -->
                  <div class="design-container">
                         <div class="row">
@@ -86,15 +75,21 @@
                                 <label class="form-check-label" for="designRadio4">Design 4</label>
                                 <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4" value="design4">
                             </div>        
-                            <!--https://www.youtube.com/watch?v=eN0c-xQmTo4-->
+                            <!--https://www.youtube.com/watch?v=cei2Ch683q0-->
                             <div class="upload col-12 col-md-6 form-check">
-                                <img src="https://raw.githubusercontent.com/ceciliabinck/taste-world-snacks/master/media/images/noimage.png" id="blah" alt="Img"><br><br>
-                                <input type="file" onchange="readUrl(this)">
-                            </div>        <!--end code https://www.youtube.com/watch?v=eN0c-xQmTo4-->
+                                <!-- <form id="myForm">
+                                    <input type="file" id="inpFile"><br>
+                                    <button type="submit">Upload Image</button>
+                                </form> -->
+                                <img id="output_image" height="261" width="389" />
+                                <input type="file" accept="image/*" onchange="preview_image(event)">
+
+  
+                            </div> <!--end code https://www.youtube.com/watch?v=cei2Ch683q0-->
                       </div>
                     </div>
                 </section> 
-                <section> 
+                <section id="step-2"> 
                     <!--Choose a Frame (Navbar - Choose a Frame)-->
                   <div class="frame-container">
                         <div class="row">
@@ -122,7 +117,7 @@
                 <section>
                     <!--Customise with Clip Art ???? (Navbar - Customise)-->
                </section>  
-                <section >
+                <section id="step-3">
                     <!--Enter your personal message (Navbar - Your Message)-->
                   <div class="message-container">
                         <div class="row">
@@ -142,7 +137,7 @@
                     </div>
                 </section>
             </form>
-            <section>
+            <section id="mail">
                 <!--Email Form to send greetings card (Navbar - Send)-->
                <div class="form-container">
                     <div class="row">
@@ -153,7 +148,7 @@
                     </div>
                 </div>
             </section> 
-            <section>
+            <section id="next">
                 <!--Send another greetings card-->
                <div class="container send-another-container">
                     <div class="row">
