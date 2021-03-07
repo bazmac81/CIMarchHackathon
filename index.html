@@ -21,7 +21,7 @@
                 <div class="hero-image col-12">
                     <div class="row">
                         <div class="col-2">
-                            <img src="./assets/images/logo-2.png" alt="Logo">
+                            <img src="./assets/images/logo-2.png" alt="Logo"><!--the logo and favicon are made with https://www.freelogodesign.org/-->
                         </div>
                         <div class="col-10">
                             <!--Hero Image specified in style.css-->
@@ -119,6 +119,14 @@
                                 <button class="btn" id="next-images" type="submit">Choose Frame</button>
                             </div>
                         </div>
+                        <div> <!--Photo upload-->   
+                            <div class="upload col-12 col-md-6 form-check">
+                                <!-- code from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html -->
+                                <img id="output_image" height="261" width="389" />
+                                <input type="file" accept="image/*" onchange="preview_image(event)">
+                                <!-- from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html  -->
+                            </div> 
+                      </div> <!-- end Photo upload-->   
                     </div>
                 </section> 
             </form>
