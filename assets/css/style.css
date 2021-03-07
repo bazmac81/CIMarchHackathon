@@ -204,6 +204,13 @@ em {
     text-align: center;
 }
 
+#back-to-images {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+
 .message-container{
     margin: 3em auto;
     text-align: center;
