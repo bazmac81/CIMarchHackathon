@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "nodemailer": "^6.5.0",
+    "save": "^2.4.0",
+    "sib-api-v3-sdk": "github:sendinblue/APIv3-nodejs-library"
+  },
+  "name": "cimarchhackathon",
+  "description": "Theme: Hacking St. Patrick's Day St. Patrick's Day is coming up, but it is going to look very different this year. Can you come up with a website, app or other web-based idea that will help people to celebrate St Patrick's day together, while apart? Maybe it's a festive way for friends and family to connect online. Or a shamrock-themed game that kids can play together. Or an Irish-language greeting card store. Whatever your idea, we can't wait to see it!",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazmac81/CIMarchHackathon.git"
+  },
+  "author": "Irasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bazmac81/CIMarchHackathon/issues"
+  },
+  "homepage": "https://github.com/bazmac81/CIMarchHackathon#readme"
+}
