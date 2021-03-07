@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </section>
-           <section class="intro" id="intro">
+            <section class="intro" id="intro">
                <div class="row">
                    <div class="col-12">
                 <!--Intro Paragraph (Navbar - Home) -->
@@ -49,11 +49,12 @@
                              <li class="featureItem">Add your personal message</li>
                         </ol>
                         <p>And Hey Presto, your <strong>Fab St. Patrick's Day Greeting Card</strong> is ready to send!</p>
+                        <button class="btn" id="start">Get Started!</button>
                     </div>
                </div> 
             </section>
-           <form>
-                <section id="step-1">
+            <form id="image-select" class="d-none">
+                <section>
                     <!-- Greetings Card Designs (Navbar - Choose Your Design) -->
                  <div class="design-container">
                         <div class="row">
@@ -115,6 +116,8 @@
                         </div>
                     </div>
                 </section> 
+            </form>
+            <form id="frame-select" class="d-none">
                 <section> 
                     <!--Choose a Frame (Navbar - Choose a Frame)-->
                   <div class="frame-container">
@@ -125,7 +128,7 @@
                             <div class="col-12 col-md-4 form-check">
                                 <img src="./assets/images/frame-one.png" class="frame-img img-fluid" height="261px" width="289px" alt="Frame One - A frame of Shamrocks with a leprechaun in the bottom left corner">
                                 <label class="form-check-label" for="frameRadio1">Frame 1</label>
-                                <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio1" value="frame1">
+                                <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio1" value="frame1" checked>
                             </div>
                             <div class="col-12 col-md-4 form-check">
                                 <img src="./assets/images/frame-two.png"  class="frame-img img-fluid" height="261px" width="289px" alt="Frame Two - A simple green box-frame">
@@ -138,12 +141,17 @@
                                 <input class="form-check-input" type="radio" name="frameRadioOptions" id="frameRadio3" value="frame3">
                             </div>
                         </div>
+                        <div class="row">
+                        <div class="col-10 mx-auto">
+                            <button class="btn" id="back-to-images" type="reset">Change Image</button>
+                            <button class="btn" id="next-text" type="submit">Write Message</button>
+                        </div>
+                      </div>
                     </div>
                 </section>
-                <section>
-                    <!--Customise with Clip Art ???? (Navbar - Customise)-->
-               </section>  
-                <section id="step-3">
+            </form>
+            <form id="card-msg" class="d-none">  
+                <section >
                     <!--Enter your personal message (Navbar - Your Message)-->
                   <div class="message-container">
                         <div class="row">
@@ -156,14 +164,31 @@
                                     <textarea class="form-control" id="messageTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="form-group"> 
-                                    <button class="submit">Preview Your Card</button>
+                                    <button class="btn go-back" type="reset">Change Frame</button>
+                                    <button class="submit" id="preview" type="submit">Preview Card</button>
                                 </div>
                             </div> <!-- End of Bootstrap Code --> 
                        </div>
                     </div>
                 </section>
             </form>
-            <section id="mail">
+            <form class="d-none" id="final-preview">
+                <div class="row">
+                    <div class="col-10 mx-auto" id="card-preview">
+                        <div id="prev-img">
+                            <img src="" id="card-img"/>
+                        </div>
+                        <div id="framed-msg">
+                            <p id="user-msg"></p>
+                        </div>
+                        <div>
+                            <button class="btn" id="change-it" type="reset">Change Something</button>
+                            <button class="btn" id="send-card" type="submit">Send it!</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <section class="d-none">
                 <!--Email Form to send greetings card (Navbar - Send)-->
                <div class="form-container">
                     <div class="row">
@@ -174,7 +199,7 @@
                     </div>
                 </div>
             </section> 
-            <section id="next">
+            <section class="d-none">
                 <!--Send another greetings card-->
                <div class="container send-another-container">
                     <div class="row">
@@ -190,5 +215,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="scripts/selection.js"></script>
     </body>
 </html>
