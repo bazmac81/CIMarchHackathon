@@ -36,7 +36,6 @@
                    <div class="col-12">
                 <!--Intro Paragraph (Navbar - Home) -->
                       <h2>Welcome to You've Got Paddy Mail!</h2>  
-
                         <p>
                          Regardless of where you are from, on <strong>St. Patrick's Day</strong> everyone is Irish!  
                         </p>
@@ -115,19 +114,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 mx-auto">
-                                <button class="btn" id="next-images" type="submit">Choose Frame</button>
-                            </div>
-                        </div>
-                        <div> <!--Photo upload-->   
+                        <div class="row"> <!--Photo upload-->   
                             <div class="upload col-12 col-md-6 form-check">
                                 <!-- code from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html -->
                                 <img id="output_image" height="261" width="389" />
                                 <input type="file" accept="image/*" onchange="preview_image(event)">
                                 <!-- from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html  -->
                             </div> 
-                      </div> <!-- end Photo upload-->   
+                        </div> <!-- end Photo upload--> 
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <div class="col-6 mx-auto form-check">
+                                    <label class="form-check-label" for="designRadio5">Design 5</label>
+                                    <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio5" value="output_image">
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <button class="btn" id="next-images" type="submit">Choose Frame</button>
+                            </div>
+                        </div>
                     </div>
                 </section> 
             </form>
