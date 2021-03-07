@@ -66,10 +66,10 @@
                         <div class="row"> <!-- Row for Design 1 and 2 -->
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6 form-check"> 
+                                    <div class="col-12 col-md-6 form-check"> 
                                         <img src="./assets/images/design-one.png" id="design1" class="img-fluid" height="261px" width="389px" alt="Greetings Card Design One - bearded man celebrating St. Patricks Day">
                                     </div>
-                                    <div class="col-6 form-check"> 
+                                    <div class="col-12 col-md-6 form-check"> 
                                         <img src="./assets/images/design-two.png" id="design2" class="img-fluid img-dog" height="261px" width="389px" alt="Greetings Card Design Two - A Dog wearing a St. Patricks Day hat">
                                     </div>
                                 </div>
@@ -78,11 +78,11 @@
                         <div class="row"> <!-- Row for radio buttons for Design 1 and 2 -->
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6 form-check">
+                                    <div class="col-12 col-md-6 form-check">
                                         <label class="form-check-label" for="designRadio1">Design 1</label>&nbsp;&nbsp;
                                         <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio1" value="design1" checked>
                                     </div>
-                                    <div class="col-6 form-check">
+                                    <div class="col-12 col-md-6 form-check">
                                         <label class="form-check-label" for="designRadio2">Design 2</label>&nbsp;&nbsp;
                                         <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio2" value="design2">
                                     </div>
@@ -92,10 +92,10 @@
                         <div class="row"> <!-- Row for Design 3 and 4-->
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6 form-check"> <!-- col-md-6-->
+                                    <div class="col-12 col-md-6 form-check"> <!-- col-md-6-->
                                         <img src="./assets/images/design-three.png" id="design3" class="img-fluid" height="261px" width="389px" alt="Greetings Card Design Three - An image saying Happy St. Patricks Day">
                                     </div>
-                                    <div class="col-6 form-check"> <!--col-md-6 -->
+                                    <div class="col-12 col-md-6 form-check"> <!--col-md-6 -->
                                         <img src="./assets/images/design-four.png" id="design4" class="img-fluid img-guinness" height="261px" width="389px" alt="Greetings Card Design Four - A pint of Guinness on a bar with a blurred background">
                                     </div>
                                 </div>
@@ -104,11 +104,11 @@
                         <div class="row"> <!-- Row for radio buttons for Design 3 and 4-->
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-6 form-check">
+                                    <div class="col-12 col-md-6 form-check">
                                         <label class="form-check-label" for="designRadio3">Design 3</label>
                                         <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio3" value="design3">
                                     </div>
-                                    <div class="col-6 form-check">
+                                    <div class="col-12 col-md-6 form-check">
                                         <label class="form-check-label" for="designRadio4">Design 4</label>
                                         <input class="form-check-input" type="radio" name="designRadioOptions" id="designRadio4" value="design4">
                                     </div>
@@ -116,10 +116,10 @@
                             </div>
                         </div>
                         <div class="row"> <!--Photo upload-->   
-                            <div class="upload col-12 col-md-6 form-check">
+                            <div class="upload col-12 col-md-6 offset-md-3 form-check">
                                 <!-- code from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html -->
                                 <img id="output_image" height="261" width="389" />
-                                <input type="file" accept="image/*" onchange="preview_image(event)">
+                                <input type="file" class="btn-upload" accept="image/*" onchange="preview_image(event)">
                                 <!-- from D. Pardal and Axel Jorgensen of https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html  -->
                             </div> 
                         </div> <!-- end Photo upload--> 
