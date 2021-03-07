@@ -73,10 +73,42 @@ some components, like buttons, contact form, and complex layouts.
 To create the project, in particular write the code itself and store it, GitPod and GitHub were used.
 Deployment of the website was supported by GitHub pages.
 
+## Testing
+
+### Testing on Different Browsers and Devices
+The website was tested on different browsers and proved to be issue-free on the following browsers:
+* Chrome;
+* Safari;
+* Edge;
+* Firefox.
+It was also tested on an IOS (Iphone 10) and Android (Pixel 4) platforms.
+
+## How To Run This Project Locally
+To clone this project into GitHub, you will need:
+* A GitHub account. Create your GitHub account [here](https://github.com/)
+* Use the Chrome browser
+
+Then follow these steps:
+1. Install the GitPod browser [extentions for Chrome](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki).
+1. Restart the browser.
+1. Log into [GitPod](https://gitpod.io/) using your GitHub account.
+1. Navigate to the project GitHub repository.
+1. Click the green "GitPod" button in the top right corner.
+1. This will trigger a new GitPod workspace to be created from the code in GitHub where you can work locally.
+
+To work on the project code within the local IDE:
+1. Navigate to the project GitHub repository.
+1. Click "Clone or Download".
+1. Copy Clone's URL for the repository.
+1. Open the terminal in your local IDE.
+1. Change the current working directory to the location where you want the clone directory to be made.
+1. Type "git clone" and then paste the URK from the step 3.
+1. Press Enter and your local clone will be created.
 
  
 ## Credits:
-
+### Media
+For development of this project, the following images were used:
 Hero Image:
 hero-image https://email.uplers.com/blog/fuel-saint-patricks-day-sales-with-10-amazing-email-inspirations/  
 
@@ -90,3 +122,9 @@ Frames:
 frame-one https://pixabay.com/illustrations/rainbow-gold-leprechaun-st-patrick-163535/  
 frame-two https://pixabay.com/illustrations/frame-border-green-st-patricks-day-2088868/  
 frame-three https://pixabay.com/illustrations/clover-frame-rainbow-st-patrick-day-4892407/  
+
+### Borrowed Code 
+Code for Bootstrap components, such as nav-bar, form, and tables was taken 
+from [Bootstap documentation](https://getbootstrap.com/docs/4.5/components/).
+[Stack Overflow website](https://stackoverflow.com/), and [W3School tutorials](https://www.w3schools.com/), 
+were used when dealing with some specific issues.
