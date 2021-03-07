@@ -9,31 +9,140 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 19px;
-    background-color: #ffffff;
+    background-color: #099441;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+/***** Header ******/
+
+.main-header {
+    width: 100%;
+    height: 50vh;
 }
 
 .hero-image{
-    height: 75vh;
+    background: url('../images/hero-image.png') no-repeat center center;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    background: url('../images/hero-image.png') center center / cover no-repeat fixed; 
-    -webkit-background-size: center center / cover no-repeat fixed;
-    -moz-background-size: center center / cover no-repeat fixed;
-    -o-background-size: center center / cover no-repeat fixed;
+    
 }
 
 .title-text{
     text-align: center;
-    font-size: 3em;
-    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    margin-top: 10px;
+    color: #224d17;
+    letter-spacing: 3px;
+     width: 100%;
+     height: 10px;
 }
+ /*******Intro*************/ 
 
-.intro{
+
+.intro {
     text-align: center;
+    background-color: #099441;
+    width: 100%;
+    height: auto;
 }
 
+.intro h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #d9df1d;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    margin: 10px;
+    letter-spacing: 3px;
+
+}
+
+.intro p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 5px;
+    margin: 5px 5px 40px 5px;
+    
+}
+
+em {
+    font-size: 22px;
+    color: #d9df1d;
+    font-family: 'Oswald', sans-serif;
+}
+
+.features {
+  margin: 2px auto;
+  padding: 15px;
+  display: block;
+  width: 350px;
+}
+
+.featureItem {
+  padding: 5px;
+  margin-left: 35px;
+  font-size: 22px;
+  color: #d9df1d;
+  font-family: 'Oswald', sans-serif;
+}
+
+/************Design Container***********************/
 .design-container{
-    margin: 3em auto;
+    margin: 1em auto;
     text-align: center;
+}
+
+.design-container h2,
+.frame-container h2,
+.message-container h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #d9df1d;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 3px;
+
+}
+
+.design-container img,
+.form-check img {
+    margin: 10px auto;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.form-check-label {
+    display: block;
+    font-size: 40px;
+    color: #d9df1d;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+
+.form-check-input {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    right: 90px;
+    top: -40px;
+  
 }
 
 .frame-container{
@@ -46,8 +155,17 @@ body{
     text-align: center;
 }
 
-.message-container .form-group{
+.message-container .form-group {
     justify-content: center;
+}
+
+.form-group label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    padding: 5px;
+    margin: 10px;
+
 }
 
 .form-container{
@@ -57,9 +175,68 @@ body{
     background-color: aqua;  /* Background color only added to highlight space available*/
 }
 
+ textarea.form-control { 
+    padding: 5px;
+    margin: 15px auto;
+    width: 80%;
+    height: 120px;
+    position: flex;
+}
+
+.submit {
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    background-color: #d9df1d;
+    color: #224d17;
+    border-radius: 5px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #224d17;
+    color: #d9df1d;
+}
 .send-another-container{
     width: 90%;
     height: 300px;
     margin: 3em auto;
     background-color: palevioletred; /* Background color only added to highlight space available*/
+}
+
+/************Media Queris****************/
+
+@media screen and (max-width: 575.98px) {
+    .title-text,
+    .intro h2,
+    .design-container h2,
+    .frame-container h2,
+    .message-container h2 {
+    font-size: 25px;
+    margin-top: 0px;
+    }
+
+    .form-check-label {
+        font-size: 20px;
+    }
+
+    .form-check-input {
+        right: 70px;
+        top: -28px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+   .main-header {
+        height: 32vh;
+    }
+
+
+
 }
