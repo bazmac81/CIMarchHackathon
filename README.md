@@ -2,23 +2,36 @@
 ## Team: Hack Me, I'm Irish 
   
 Theme: Hacking St. Patrick's Day
-St. Patrick's Day is coming up, but it is going to look very different this year. Our team suggests a simple idea of how to stay
-connected even though being apart. This is an interactive website that invites users to create custom cards and send them to
-their friends and family or even print or share on social media. 
+St. Patrick's Day is coming up, but it is going to look very different this year. Our team suggests a simple idea of how to stay connected even though being apart. Paddy Mail is an interactive website that invites users to create custom cards and send them to their friends and family, print them or even share them on social media. 
+
+### Progression of the page 
+
+When users enter the website they can use the Get Started! button to start the design process of there St. Patrick's Day card. After clicking the button they will be brought to step 1. 
+
+At step 1 users get to see the different card options we offer radio buttons will make sure that the user can only select one design. If the user chooses to go for the option to have there own image on the card, they have to choose an image first from there device. When they have chosen a design they click the Choose Frame button. The user will then go to step 2. 
+
+At step 2 the user can use one option of the frame options. The frame will come on the other side of the card around the personalised text. Also here the user can only select one design with the use of radio buttons. Here the user has the option to choose another design or go to step 3 where the user can write a text for on the card.
+
+At step 3 The user can write a custom text that will go on the other side of the card. After writing a text the user has the option to change there chosen frame to view a preview of the card that they designed.
+
+After seeing the preview of the custom made card the user can choose to go a step back if they want to change something or send the card.
+
+The last step is to fill in the information on the email form and the card is ready to be sent.
+
   
 ## UX
 
 ### Project goals
-The primary goal of this project was work as a team and together create a functional piece of software according to the Hackathon theme.
+The primary goal of this project was to work as a team to create a functional piece of software according to the Hackathon theme.
 
 ### Customers' goals
-Main audience of this website would be diverse in age, but united in their love to Ireland. 
+The main audience of this website would be diverse in age but united in their love for Ireland. 
 These are either people from Ireland or have friends/family in Ireland, as at the moment this website allows celebrating 
 only St Patrick's themed postcards. 
 Customers goals are:
-* create unique cards and send them to their friends and/or family;
-* share a general St Patrick's Day greeting on social media;
-* print out a custom made post card.
+* Create unique cards and send them to their friends and/or family;
+* Share a general St Patrick's Day greeting on social media;
+* Print out a custom made postcard.
 
 This website helps the users to meet their needs because: 
 * the goals stated above were taken into consideration during all stages of the development process;
@@ -29,33 +42,44 @@ This website helps the users to meet their needs because:
 Developers' goals include:
 * master the skills that have already bee obtained and learn something new;
 * learn how to work in a team, imitating agile software development lifecycle; 
-* acquire deeper knowledge of GitHub and version control;
-* develop quality piece of software for their portfolios. 
+* acquire a deeper knowledge of GitHub and version control;
+* develop a quality piece of software for their portfolios. 
 Throughout the development process, the team collaborated closely, holding everyday meetings, working in pairs, 
 and taking advantage of peer code review.
 
 ### User Stories
 As a new visitor to the website, I want: 
-* to navigate the website easily and create a greeting card;
+* to be able to see all the card options, so that I can choose the funniest
+* to navigate the website easily so that I can create a greeting card.
 * to be able to send and/or share the generated card.
-
-As a return client of the salon, I want:
-* to be able to find previously created cards and re-use them.
+* to be able to adjust the greeting, so I can write custom once to different people.
+* to be able to use their own image, so everyone can meet my new dog
 
 ### Design choices
-The overall feel of the website is cheerful and happy. The following design choices were made with this in mind:
+This project is all about St. Patrick's day and how to make it a special day even now that we can not spend it together as we'll are used to. As this year we have to celebrate in a different but fun way. That is why the overall feel of this website is cheerful and happy. The following design choices were made.
 
 #### Fonts
 
+As it is St. Patrick themed we would not leave out a Celtic like font, So we decided to make to give our logo a Celtic feel with the font **uncial antique** of <a href="https://www.freelogodesign.org/">Freelogogesign</a> website. As this font could be seen as not easy to read we have decided to use the font **Roboto** as the main font. 
+We choose **Roboto** because it doesn’t compromise and allows letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+For the headings, we are using the font **Oswald** as it pairs very well with **Roboto**.
 
 #### Icons
+
 Share buttons display icons that were chosen for their obvious meaning and can be easily understood by everyone. 
 
 #### Styling
 
+To greet our users we used a hero image with a leprechaun and an envelope of shamrocks because we could all use a bit of luck at the moment. The rest of the page has the colour **#099441** as the background. All the headings, important words and options have the colour **#d9df1d** to make them pop against the green background. 
+
+The different sections of the website are shown one by one to give a calmer feel and to give the user all the time to make a good decision. Is the user not happy at the end with the card then they can use the preview buttons to go back and change things as they used the next buttons to go to the next step in the design process.
+
 ##### Colour palette
-For styling this website the following color palette was chosen:
-- ![#224d17](https://placehold.it/20/224d17/224d17) `#224d17`
+
+This project is made in honour of St. Patrick's day, which is a cheerful and fun holiday. The project could not say behind. So we made our project feel like St. Patrick's day. Their for we choose a very suitable colour palette :
+
+The colour that everyone links with St. Patrick's day, green. In this project, we used 4 different shades of green and to top it off 1 shade of yellow as we found it more cheerful and fun than a shade of gold.
+- ![#224d17](https://placehold.it/20/224d17/224d17) `#224d17` 
 - ![#099441](https://placehold.it/20/099441/099441) `#099441` 
 - ![#60a830](https://placehold.it/20/60a830/60a830) `#60a830`  
 - ![#9fda40](https://placehold.it/20/9fda40/9fda40) `#9fda40`  
@@ -65,13 +89,27 @@ For styling this website the following color palette was chosen:
 
 ### Existing Features
 
+- [x] Responsive on most devices
+- [x] There is are images for customers to visually understand the concept better
+- [x] Cards can be shared/emailed to friend and/or family
+- [x] Radio buttons to select options
+- [x] Next and preview buttons to navigate through the website with ease
+- [x] Email form to send it to others
+- [x] to be able to see a preview of the made card
+
 ### Features Left to Implement
 
-## Technologies Used
-During completion of this project mainly HTML and CSS were used. Developers also made use of Bootstrap 4 to implement 
-some components, like buttons, contact form, and complex layouts.
-To create the project, in particular write the code itself and store it, GitPod and GitHub were used.
-Deployment of the website was supported by GitHub pages.
+- [] To be able to print the card
+- [] The ability to save the card
+- [] Make a selfy to send on the card
+- [] To be able to share the card on social media
+- [] To have more holiday theme card
+- [] To have to ability to login and save a card
+
+## Technologies and Langues Used
+
+This project is built out of HTML, CSS and JavaScript. For the README MarkDown was used. The developers also used Bootstrap 4 to implement components like buttons, contact form and complex layouts.
+To create the project the developers have mixed code of a third party, this is credited in the code, and written code of the developers them selfs. Gitpod made it easier to contribute to this build and Github to store it. The project is deployed on Github pages
 
 ## Testing
 
@@ -81,7 +119,7 @@ The website was tested on different browsers and proved to be issue-free on the 
 * Safari;
 * Edge;
 * Firefox.
-It was also tested on an IOS (Iphone 10) and Android (Pixel 4) platforms.
+It was also tested on an IOS (iPhone 10) and Android (Pixel 4) platforms.
 
 ## How To Run This Project Locally
 To clone this project into GitHub, you will need:
@@ -102,13 +140,13 @@ To work on the project code within the local IDE:
 1. Copy Clone's URL for the repository.
 1. Open the terminal in your local IDE.
 1. Change the current working directory to the location where you want the clone directory to be made.
-1. Type "git clone" and then paste the URK from the step 3.
+1. Type "git clone" and then paste the URL from step 3.
 1. Press Enter and your local clone will be created.
 
  
 ## Credits:
 ### Media
-For development of this project, the following images were used:
+For the development of this project, the following images were used:
 Hero Image:
 hero-image https://email.uplers.com/blog/fuel-saint-patricks-day-sales-with-10-amazing-email-inspirations/  
 
