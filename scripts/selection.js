@@ -34,7 +34,12 @@ function chooseSelection(e){
     if(position < 2){
         for (let i = 0; i < images.length; i++){
             if (images[i].checked){
-                choices[position] = images[i].previousElementSibling.previousElementSibling.getAttribute('src');
+                if(formID == "image-select"){
+                    choices[position] = document.getElementById(images[i].value).getAttribute('src');
+                }
+                else{
+                    choices[position] = images[i].previousElementSibling.previousElementSibling.getAttribute('src');
+                }
             }
         }
     }
