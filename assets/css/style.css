@@ -131,7 +131,7 @@ em {
 }
 
 /************Design Container***********************/
-.design-container{
+.design-container {
     margin: 1em auto;
     text-align: center;
 }
@@ -154,6 +154,33 @@ em {
     margin: 10px auto;
     box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
 }
+
+.design-container img {
+    width: 349px;
+    height: 232.21px;
+    background: url('../images/photo-camera.png') no-repeat center center;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #b9bcbe;
+}
+
+.btn-upload {
+    padding: 5px;
+    margin: 10px;
+    width: 280px;
+    background-color: #224d17;
+    color: #d9df1d;
+    border-radius: 5px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+
+}
+
 
 .form-check-label {
     display: block;
