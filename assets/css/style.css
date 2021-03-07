@@ -113,6 +113,23 @@ em {
   font-family: 'Oswald', sans-serif;
 }
 
+/************Next Step Buttons***********************/
+
+.btn {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+    width: 250px;
+    background-color: #d9df1d;
+    color: #224d17;
+    border-radius: 5px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
 /************Design Container***********************/
 .design-container{
     margin: 1em auto;
@@ -207,7 +224,8 @@ em {
     font-weight: 600;
 }
 
-.submit:hover {
+.submit:hover,
+.btn:hover {
     background-color: #224d17;
     color: #d9df1d;
 }
