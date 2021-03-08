@@ -4,9 +4,11 @@ var getStarted = document.getElementById('start');
 
 //Capture the section form elements to progress through the card creation
 var imageSelect = document.getElementById('image-select');
-var frameSelect = document.getElementById('frame-select')
-var previewCard = document.getElementById('card-msg')
-var confirmCard = document.getElementById('final-preview')
+var frameSelect = document.getElementById('frame-select');
+var previewCard = document.getElementById('card-msg');
+var confirmCard = document.getElementById('final-preview');
+var sendEmail = document.getElementById('contact-form');
+var sendAnother = document.getElementById('sendAnother');
 
 //Based on the current element of the journey, capture the user choices and save them to an array
 function chooseSelection(e){
@@ -91,6 +93,12 @@ previewCard.addEventListener('submit', function(e){
 confirmCard.addEventListener('submit', function(e){
     chooseSelection(e);
 });
+sendEmail.addEventListener('submit', function(e){
+    chooseSelection(e);
+});
+sendAnother.addEventListener('submit', function(e){
+    // chooseSelection(e);
+});
 
 //Event listeners to go back through the options using the 'reset' event
 frameSelect.addEventListener('reset', function(e){
@@ -100,5 +108,8 @@ previewCard.addEventListener('reset', function(e){
     goBack(e);
 });
 confirmCard.addEventListener('reset', function(e){
+    goBack(e);
+});
+sendAnother.addEventListener('reset', function(e){
     goBack(e);
 });

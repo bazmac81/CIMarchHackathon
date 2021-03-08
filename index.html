@@ -12,6 +12,8 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>   
         <link rel="shortcut icon" href="assets/images/favicon-solid.png" />
         <script src="assets/js/photo.js"></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6044bb8d406a11001102d4e6&product=inline-share-buttons" async="async"></script>
+
     </head>
     <body>
         <header>
@@ -211,24 +213,87 @@
                 </div>
                 
             </form>
-            <section class="d-none">
-                <!--Email Form to send greetings card (Navbar - Send)-->
-               <div class="form-container">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 offset-lg-1">
-                            <!-- Insert Form Here -->
-                            <h2>Space for Email Form to slot in</h2>
-                        </div>
-                    </div>
+            <!-- Send the card Form Here -->
+            <!-- form code was taken from here: https://bbbootstrap.com/snippets/simple-contact-form-74408136 -->
+            <section class="d-none" id="sendCard">
+            <div class="container">
+                <div class=" text-center mt-5 ">
+                    <h1>Let's send your card now!</h1>
                 </div>
-            </section> 
-            <section class="d-none">
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-light">
+                            <div class="card-body bg-light">
+                                <div class="container">
+                                    <form id="contact-form" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_name">Your Name *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            class="form-control" placeholder="Please enter your name *"
+                                                            required="required" data-error="Your name is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_recipient">Recipient's
+                                                            Name *</label> <input id="form_recipient" type="text"
+                                                            name="form_recipient" class="form-control"
+                                                            placeholder="Please enter recipient's name *"
+                                                            required="required"
+                                                            data-error="Recipient's name is required."> </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="sender_email">Your email
+                                                            *</label> <input id="sender_email" type="email" name="email"
+                                                            class="form-control" placeholder="Please enter your email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="rec_email">Recipient's email
+                                                            *</label> <input id="rec_email" type="email" name="email"
+                                                            class="form-control"
+                                                            placeholder="Please enter recipient's email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"> <label for="form_message">Message
+                                                            (optional)</label> <textarea id="form_message"
+                                                            name="message" class="form-control"
+                                                            placeholder="Write your greeting message here." rows="4"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12"> <input type="submit"
+                                                        class="btn btn-success btn-send pt-2 btn-block "
+                                                        value="Send Message"> </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- /.8 -->
+                    </div> <!-- /.row-->
+                </div>
+            </div>
+            <div class="sharethis-inline-share-buttons"></div>
+            </section>
+            <section class="d-none" id="sendAnother">
                 <!--Send another greetings card-->
                <div class="container send-another-container">
                     <div class="row">
                         <div class="col-12 col-lg-10 offset-lg-1">
                             <!-- Insert Form Here -->
-                         <h2>Space for Send Another Card - Need to clarify requirments of this section ref Stephen</h2>
+                         <h2>You Paddy mail was successfully sent!</h2>
+                         <h3>Would you like to send it once more or create a new one? </h3>
+                         <button class="btn go-back" type="reset">Send again</button>
+                         <button class="submit btn" id="startOver" type="submit">Create a new card</button>
                         </div>
                     </div>
                 </div>
