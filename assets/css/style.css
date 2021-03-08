@@ -54,8 +54,8 @@ body{
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: block;
     padding: 20px;
     margin-right: 60px;
@@ -276,7 +276,8 @@ em {
 
 
 
-.user-msg-frame {
+.user-msg-frame,
+#card-img {
     width: 540px;
     height: auto;
     background-repeat: no-repeat;
