@@ -270,13 +270,13 @@ em {
     top: 60px;
 }
 
-
 #card-img {
-    position: relative;
-    left: 347px;
+    display: block;
+    margin: 0px auto;
 }
 
-#card-img,
+
+
 .user-msg-frame {
     width: 540px;
     height: auto;
@@ -306,18 +306,18 @@ em {
    
 }
 
-.preview-btn {
+/*.preview-btn {
     width: 50%;
     height: auto;
     margin: 10px auto;
-}
+}*/
 
 #send-card {
     background-color: #224d17;
     color: #d9df1d;
     margin-bottom: 3rem;
 }
-
+/***************Extra Container***********************/
 
 .send-another-container{
     width: 90%;
