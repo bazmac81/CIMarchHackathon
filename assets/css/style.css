@@ -206,8 +206,7 @@ em {
 
 #back-to-images,
 .go-back,
-.submit,
-#change-it {
+.submit {
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -306,16 +305,19 @@ em {
    
 }
 
-/*.preview-btn {
-    width: 50%;
-    height: auto;
-    margin: 10px auto;
-}*/
+.preview-btn {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   
+}
+
+
 
 #send-card {
     background-color: #224d17;
     color: #d9df1d;
-    margin-bottom: 3rem;
 }
 /***************Extra Container***********************/
 
@@ -363,6 +365,18 @@ em {
     width: 160px;
     height: 160px;
     justify-content: center;
+    }
+
+    .user-msg-frame {
+        width: 369px;
+        height: 232px;
+        margin-bottom: 20px;
+    }
+
+    #card-img,
+    #framed-msg {
+        width: 350px;
+        height: 230px;
     }
 
 
