@@ -78,6 +78,13 @@ function showPreview(){
     document.getElementById('user-msg').innerText = choices[2];
 }
 
+function sendIt(e){
+    e.preventDefault();
+    
+    document.getElementById('sendCard').classList.toggle('d-none');
+    document.getElementById('sendAnother').classList.toggle('d-none');
+}
+
 //Event listeners to progress through the form creation using the 'submit' event
 getStarted.addEventListener('click', startCreation, false);
 imageSelect.addEventListener('submit', function(e){
@@ -94,7 +101,7 @@ confirmCard.addEventListener('submit', function(e){
     chooseSelection(e);
 });
 sendEmail.addEventListener('submit', function(e){
-    chooseSelection(e);
+    sendIt(e);
 });
 sendAnother.addEventListener('submit', function(e){
     // chooseSelection(e);
